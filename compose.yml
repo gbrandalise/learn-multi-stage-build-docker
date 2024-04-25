@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: .
+      target: ${BUILD_TARGET:-application}
+    image: learn-multi-stage-build-docker:v6
+    container_name: learn-multi-stage-build-docker
